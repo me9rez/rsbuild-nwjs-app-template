@@ -2,6 +2,8 @@
 
 这是一个基于 NW.js 的桌面应用模板项目，使用 Rsbuild 进行构建，Preact 作为前端框架。
 
+> 可以参考此项目来共享NW.js Runtime, 避免每个项目都需要包含NW.js Runtime. 减少应用体积.
+
 ## 项目特性
 
 - 🚀 基于 Rsbuild 现代化构建工具
@@ -22,8 +24,8 @@
 
 ### 环境要求
 
-- Node.js >= 16
-- NW.js SDK (可选，用于本地调试)
+- Node.js >= 24
+- NW.js SDK: [下载地址](https://nwjs.io/downloads/)
 
 ### 安装依赖
 
@@ -60,7 +62,7 @@ pnpm build
 2. 将构建后的 `dist` 目录内容复制到 NW.js 应用目录
 3. 运行 NW.exe
 
-### 方法二：创建快捷方式 (Windows)
+### 方法二：创建快捷方式 (Windows) - 推荐
 
 项目提供了 `CreateShortcut.ps1` 脚本用于创建桌面快捷方式：
 
